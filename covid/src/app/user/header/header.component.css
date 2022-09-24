@@ -1,0 +1,87 @@
+
+#header{
+    display:flex;
+    align-items: center;
+    padding: 10px 30px;
+    background:white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    justify-content: space-between;
+    }
+    .container{
+        padding:5px 1026px;
+        background-color:#E12454;
+        }
+        .container a{
+            margin-top: 15px;
+            color:#fff;
+            font-size: 15px;
+            font-family: Arial;
+            font-weight: 600;
+            justify-content:space-between;
+        }
+        #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #navbar li{
+        list-style-type: none;
+        padding: 0 40px;   
+    }
+    #navbar li a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        color:#fff;
+    }
+    #navbar li a:hover{
+        color:salmon;
+    }
+    .logo{
+        width:80px;
+        height:80px;
+    }
+    #x{
+        width:30px;
+        height:30px;
+        font-size: 30px;
+    }
+    span{
+        color:#fff;
+        font-size: 2rem;
+    }
+/* You can add global styles to this file, and also import other style files */
+
+h1{
+    text-align: center;
+}
+
+.has-search .form-control {
+    padding-left: 2rem;
+}
+.input-group{
+font-size: 40px;
+margin-left:850px;
+margin-top: 50px;
+text-align: center;
+font-family: sans-serif;
+
+}
+.cart-amount{
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    color:red;
+    background-color:white;
+    padding: 3px;
+    border-radius: 3px;
+}
+.cart{
+    position: relative;
+    color:black;
+    background-color: #fff;
+    font-size: 30px;
+    padding:5px;
+    border-radius: 4px;
+}
