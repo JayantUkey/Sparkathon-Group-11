@@ -1,0 +1,27 @@
+#banner{
+    background-color: #fff !important;
+    color: #E12454;
+    font-size: 30px;
+ }
+ form{
+   width:750px;   
+ }
+ #password_button{
+   background-color:white;
+   border: 0px;
+   color:grey;
+   
+ }
+ .baner{
+ 
+   display:flex;
+   justify-content: center;
+ }
+ label {
+   font-size:large;
+   color:#E12454;
+ }
+ button {
+   background-color: #eeeef0;
+   color: black;
+ }

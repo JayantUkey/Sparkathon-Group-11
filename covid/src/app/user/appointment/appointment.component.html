@@ -1,0 +1,136 @@
+<div class="baner">
+    <form [formGroup]="signup" class="shadow p-3 mb-5 bg-body rounded;">
+      <h3
+        class="shadow p-5 mb-5 bg-body rounded"
+        id="banner"
+        style="font-weight: 500"
+      >
+        <img style="height:50px; width:50px;background-color: #E12454;"
+          src="https://img.freepik.com/free-vector/cartoon-vaccination-campaign-illustration_52683-62384.jpg?size=338&ext=jpg&ga=GA1.2.873670002.1658073867"
+        />
+        Book An Appointment
+      </h3>
+  
+      <br />
+      <div *ngIf="success">
+        <p style="color: red; margin-left: 12rem">
+          Sorry!! your email id , password or role is invalid
+        </p>
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          class="form-control"
+          formControlName="name"
+          autocomplete="on"
+        />
+      </div>
+      <br />
+  
+      <div class="form-group">
+        <label for="email" class="form-label">Email address</label>
+        <input
+          type="email"
+          id="email"
+          class="form-control"
+          formControlName="email"
+          aria-describedby="emailHelp"
+          autocomplete="on"
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="hospital" class="form-label">Hospital Name</label>
+        <input
+          type="hospital"
+          id="hospital"
+          class="form-control"
+          formControlName="hospital"
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="aadhar" class="form-label">Aadhar number</label>
+        <input
+          type="text"
+          id="aadhar"
+          class="form-control"
+          formControlName="aadhar"
+          autocomplete="on"
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="address" class="form-label">Address</label>
+        <input
+          type="text"
+          id="address"
+          class="form-control"
+          formControlName="address"
+          autocomplete="on"
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="mobile_no" class="form-label">Mobile number</label>
+        <input
+          type="text"
+          id="mobile_no"
+          class="form-control"
+          formControlName="mobile_no"
+          autocomplete="on"
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="p_dose" class="form-label">Choose your dose</label>
+        <input
+          type="text"
+          id="p_dose"
+          class="form-control"
+          formControlName="p_dose"
+          autocomplete="on"
+        />
+      </div>
+      <br />
+  
+      <div class="form-group">
+        <label class="form-label">Gender</label><br />
+  
+        <div class="form-check form-check-inline">
+          <input
+            name="role"
+            type="radio"
+            id="role2"
+            class="form-check-input"
+            formControlName="role"
+            value="Admin"
+          />
+          <label for="role2">Male</label>
+        </div>
+  
+        <div class="form-check form-check-inline">
+          <input
+            name="role"
+            type="radio"
+            id="role1"
+            class="form-check-input"
+            formControlName="role"
+            value="Patient"
+          />
+          <label for="role1">Female</label>
+        </div>
+      </div>
+  
+      <button type="button" class="btn btn-primary d-grid gap-1 col-3 mx-auto" [disabled]="signup.invalid">
+        Submit
+      </button>
+      <br /><br />
+  
+      <br />
+    </form>
+  </div>
+  

@@ -1,0 +1,23 @@
+<div class="container">
+    <input class="search" type="search" #search (keyup)="searchitem(search.value);">
+    <button class="btn btn-primary">Search</button>
+</div>
+<div class="grid">
+    <div *ngFor="let x of vaccination; let i = index">
+        <div class="g-col-6 g-col-md-4">
+            <div class="main">
+                <div class="card">
+                    <div class="card-body">
+                        <img style="height:80px;" src="{{x.image}}">
+                        <p class="title"><label style="color:#E12454">Vaccine:&nbsp;</label>{{x.name}}</p>
+                        <p><label style="color:#E12454">Hospital Name:&nbsp;</label>{{x.hname}}</p>
+                        <p style="font-size:20px;"> <label style="color:#E12454">Price:&nbsp;</label>{{x.description}}</p>
+                        <p style="align-items:right;"><label style="color:#E12454">Dose:&nbsp;</label>{{x.dose}}</p>
+                        <p><label style="color:#E12454">Slot:&nbsp;</label>{{x.slot}}</p>
+                        <button routerLink="/app" style=" background-color:#E12454; color:#fff;width:100px;" class="btn btn-secondary">{{x.buttontxt}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
