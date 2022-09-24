@@ -49,7 +49,15 @@
           id="hospital"
           class="form-control"
           formControlName="hospital"
+          list="list1"
         />
+        <datalist id="list1">
+          <option>Matrachaya hospital</option>
+          <option>LifeLine hospital</option>
+          <option>REGENCY hospital</option>
+          <option>AIIMS hospital</option>
+
+        </datalist>
       </div>
       <br />
       <div class="form-group">
@@ -125,7 +133,7 @@
         </div>
       </div>
   
-      <button type="button" class="btn btn-primary d-grid gap-1 col-3 mx-auto" [disabled]="signup.invalid">
+      <button type="button" class="btn btn-primary d-grid gap-1 col-3 mx-auto" [disabled]="signup.invalid" (click)="check();">
         Submit
       </button>
       <br /><br />

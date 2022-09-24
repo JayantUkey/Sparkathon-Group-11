@@ -14,10 +14,12 @@
                         <p style="font-size:20px;"> <label style="color:#E12454">Price:&nbsp;</label>{{x.description}}</p>
                         <p style="align-items:right;"><label style="color:#E12454">Dose:&nbsp;</label>{{x.dose}}</p>
                         <p><label style="color:#E12454">Slot:&nbsp;</label>{{x.slot}}</p>
-                        <button routerLink="/app" style=" background-color:#E12454; color:#fff;width:100px;" class="btn btn-secondary">{{x.buttontxt}}</button>
+                        <button type="button" class="btn btn-primary" routerLink="/app" style=" background-color:#E12454; color:#fff;width:100px;"  class="btn btn-secondary"  (click)="addtofavourites(i)">{{x.buttontxt}}</button>
                 </div>
             </div>
         </div>
     </div>
   </div>
   </div>
+
+  

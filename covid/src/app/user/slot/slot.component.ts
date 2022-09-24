@@ -12,7 +12,7 @@ export class SlotComponent implements OnInit {
   ngOnInit(): void {
   }
   lnk="";
-  fav1:any[]=[];
+  Book:any[]=[];
   image:any;
   cardname:any;
   price:any;
@@ -88,9 +88,23 @@ fav:0,
 ]
 updatelnk(data:string){
   this.lnk =data;
-  this.fav1=this.vaccination.filter(item=>item.fav==1)    
+  this.Book=this.vaccination.filter(item=>item.fav==1)    
  }
  searchitem(data:any){
   this.vaccination=this.vaccination.filter((item: { name: string | any[];})=>item.name.indexOf(data)>=0);
  }
+ addtofavourites(data:any){
+  this.vaccination[data].fav=1;
+  console.log(this.vaccination[data]);
+  } 
+  Removecard($event:any){
+    console.log("id is"+$event);
+    this.vaccination.splice(1,0);
+    }
+    check(){
+      alert('Your have suucessfully booked your slot for vaccination!');
+    }
+additem(data:any){
+  this.vaccination=this.vaccination.filter((item: { name: string | any[];})=>item.name.indexOf(data)>=0);
+}
 }

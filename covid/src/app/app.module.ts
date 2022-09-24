@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { SlotComponent } from './user/slot/slot.component';
+import { BookingComponent } from './user/booking/booking.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SlotComponent } from './user/slot/slot.component';
     AppointmentComponent,
     LoginComponent,
     SignupComponent,
-    SlotComponent
+    SlotComponent,
+    BookingComponent
 
   ],
   imports: [

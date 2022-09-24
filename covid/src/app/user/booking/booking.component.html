@@ -1,0 +1,59 @@
+<div *ngFor="let x of vaccination; let i = index">
+    <div class="g-col-6 g-col-md-4">
+      <div class="main">
+        <div class="card">
+          <div class="card-body">
+            <img src="{{x.image}}" class="card-img-top">
+            <p class="title">{{x.name}}</p>
+            <p class="card-text">{{x.description}}</p>
+            <h1 style="align-items: right; font-size:20px;">{{x.dose}}</h1>
+                     <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" (click)="removefun(x.Book)">Remove</button>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Buy Now
+              </button>
+  
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <table class="table">
+                        <thead class="table-dark">
+                          <tr>
+                            <th>id</th>
+                            <th>Image</th>
+                          <th>Item</th>
+                          <th>Price</th>
+                          <th>Quantity</th>
+                          <th>total</th>
+  
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let x of Book; let i=index;">
+                            <td>{{i+1}}</td>
+                            <td> <img style="width:80px; height:80px;" src="{{x.image}}" class="card-img-top"></td>
+                            <td>{{x.cardname}}</td>
+                            <td>{{x.description}}</td>
+                           <td><span >{{x.qty}}</span></td> 
+                            <td>{{(x.description-0)*(x.qty-0)}}</td>             
+                          </tr>
+                          
+                        </tbody>
+                        <tr>Subtotal:{{(x.description-0)*(x.qty-0)}}</tr>
+                      </table>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" (click)="check();">Checkout</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                     

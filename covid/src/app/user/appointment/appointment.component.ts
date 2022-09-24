@@ -11,7 +11,9 @@ export class AppointmentComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+check(){
+  alert('You have booked your vaccination slot successfully!!')
+}
   success = false
 
   signup = new FormGroup({
