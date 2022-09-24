@@ -3,7 +3,7 @@
 }.form-control2{
     width:400px;
     height:100px;
-    margin-left: 450px;
+    margin-left: 400px;
     border-radius:0px;
     font-weight: 300;
 }
@@ -19,8 +19,36 @@
 .form-control1{
     width:400px;
     height:100px;
-    
 }
+.section-header {
+    color: black;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+
+}
+
+.section-title {
+    font-weight: 900;
+    margin-left: 2.5%;
+    font-size: 40px;
+}
+
+.category-section {
+    background-color: #f9fcff;
+    margin-top: 3%;
+}
+
+.row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+}
+
 .f-category {
     transition: all .3s linear;
     border: 1px solid #f1f1f1;
@@ -72,84 +100,16 @@ a {
     background:red;
 }
 
-.job_number {
-    font-size: 14px;
-    color: #fff;
-    line-height: 26px;
-    font-family: 'Rubik', sans-serif;
-    margin-bottom: 0;
-}
 
 .bg-color-2 {
     background: #4DADF5;
 }
 
 .bg-color-3 {
-    background: #8000ff;
+    background: #028af1;
 }
 
 .bg-color-4 {
-    background:#26ae61 ;
-}
-
-.col-md-4 {
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-}
-
-.col-md-4 .col-lg-4 .col-sm-6 {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-
-}
-.section-header {
-    color: black;
-    margin-bottom: 40px;
-    text-align: center;
-    position: relative;
-
-}
-
-.section-title {
-    font-weight: 900;
-    margin-left: 2.5%;
-    font-size: 40px;
-}
-
-.category-section {
-    background-color: #f9fcff;
-    margin-top: 7%;
-}
-
-.row {
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-}
-
-.work-process {
-    margin: 15px 0;
-    padding: 15px;
-    text-align: center;
-    padding: 0px 30px;
-
-}
-
-.work-process .process-icon {
-    font-size: 48px;
-    color: #26ae61;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-h4 {
-    font-size: 20px;
+    background:#26ae61;
 }
 

@@ -3,11 +3,11 @@
 </div>
 <div class="input1">
     <div>
-        <input type="text" class="form-control2" placeholder="Choose your Location" list="mylist">
+        <input type="text" class="form-control2" #search placeholder="Choose your Location" list="mylist">
         <datalist id="mylist">
-             <option value="MATRACHAYA HOPSITAL,INDIA">
-                <option value="REGENCY HOSPITAL">
-                    <option value="RAMSHIV HOSPITAL">
+             <option value="Option 1">
+                <option value="Option 2">
+                    <option value="Option 3">
 </datalist>
   </div>
   <div>
@@ -18,7 +18,7 @@
                
 </datalist>
   </div>
-    <button class="btn btn-primary"><a routerLink="/appointment">Get Vaccinated Now</a></button>
+    <button class="btn btn-primary">Get Vaccinated Now</button>
 </div>
 
 
@@ -27,37 +27,42 @@
         <div class="section-header">
           <h2 class="section-title">Browse Categories</h2>
           <br>
-          <p>How we have guidance for slots availability,cure of Covid</p>
+          <p>Get Vaccinated successfully according to slots availability</p>
         </div>
         <br>
   
         <div class="row">
           <div class="col-lg-3 col-md-6 col-xs-12 f-category">
+            <a routerLink="/joblist/Finance">
               <div class="icon bg-color-1">
                 <i class="bi bi-heart" aria-hidden="true" style="color:white;margin-top: 23%;"></i>
               </div>
               <h3>Heart</h3>
-            
+            </a>
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12 f-category">
-            
-              <div  class="icon bg-color-2">
-                <i class="bi bi-123'" aria-hidden="true" style="color:whitesmoke;margin-top: 23%;"></i>
+            <a routerLink="/joblist/Sales">
+              <div class="icon bg-color-2">
+                <i class="span class='bi bi-123'" aria-hidden="true" style="color:whitesmoke;margin-top: 23%;"></i>
               </div>
               <h3>Vaccinated</h3>
+            </a>
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12 f-category">
+            <a routerLink="/joblist/Education">
               <div class="icon bg-color-3">
                 <i class="bi bi-hand-index" aria-hidden="true" style="color:whitesmoke;margin-top: 23%;"></i>
               </div>
               <h3>Symptoms</h3>
+            </a>
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12 f-category">
+            <a routerLink="/joblist/Technologies">
               <div class="icon bg-color-4">
                 <i class="fa fa-television fa-2x" aria-hidden="true" style="color:whitesmoke;margin-top: 23%;"></i>
               </div>
               <h3>Care</h3>
-                        
+                          </a>
           </div>
         </div>
       </div>
